@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLLR</title>
+  </head>
+  <body>
+    <div class="input-section">
+      <form action="{{url_for('predict')}}" method="post">
+        <input type="text" name="MedInc" id="" required /><br />
+        <input type="text" name="HouseAge" id="" required /><br />
+        <input type="text" name="AveRooms" id="" required /><br />
+        <input type="text" name="AveBedrms" id="" required /><br />
+        <input type="text" name="Population" id="" required /><br />
+        <input type="text" name="AveOccup" id="" required /><br />
+        <input type="text" name="Latitude" id="" required /><br />
+        <input type="text" name="Longitude" id="" required /><br />
+
+        <button type="submit">Predict</button>
+      </form>
+    </div>
+
+    <div class="output-section">{{prediction_test}}</div>
+  </body>
+</html>
